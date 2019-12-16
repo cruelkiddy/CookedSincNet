@@ -18,3 +18,12 @@ Thanks to our contributors: **gdx wcy xfy zr**
 
 (What they are saying is really funny :) )
 
+## How Exactly did we modify the code
+
+1. We recorded using IPhone 8P, whose default format is m4a. So we used Matlab to convert it to wav format. 
+2. By the same time, we reduced sample rate to 16KHz(48KHz default) 
+3. By the same time, we cut off silence fragment
+4. Change dataset folder path in configure file
+5. Change data_lists's content manully
+6. Write label dict using a python script
+7. Make prediction by removing **Optimization Step** in Training Process.
